@@ -92,6 +92,7 @@ header {
     position: relative;/*permite posicionamento relativo*/
     min-height: 85vh;/*altura minima da sessao*/
     background: url(img/home.jpg) no-repeat;/*Adiciona a umagem sem repetição*/
+    background-size: cover; /*Define o preenchimento da imagem*/
     background-position: center;/*Pocisionamento da imagem*/
     border-bottom: var(--border);/*Adiciona borda inferior*/
 }
@@ -115,4 +116,15 @@ header {
     line-height: 1.8; /* Espaçamento entre linhas */
     padding: 1rem 0; /* Espaçamento interno */
     color: #fff; /*cor da letra */
+}
+
+#home::before {
+    content: " ";/* adiciona pseudo=elemento vazio */
+    position: absolute; /* define posicionamento absoluto */
+    top: 0; /* alinha o pseudo elemento ao topo */
+    left: 0; /* alinha à esquerda */
+    width: 100%; /* ocupa toda a largura */
+    height: 100%; /* ocupa toda altura */
+    background: rgba(0,0,0, 0.5); /* adiciona sobreposição escura */
+    z-index: 1;
 }
