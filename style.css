@@ -128,3 +128,69 @@ header {
     background: rgba(0,0,0, 0.5); /* adiciona sobreposição escura */
     z-index: 1;
 }
+
+section {
+    padding: 2rem 7%; /* garante espaçamento interno nas sessões (responsividade) */
+
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;/* texto em caixa alta*/
+    padding-bottom: 3rem;/* espaçamento inferior em relação ao titulo */
+    font-size: 4rem; /* 40% */
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase; /*deixa o texto em caixa alta*/
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.9rem 3rem; /*preenchimento interno superior e inferior */
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+    display: inline-block; /* deixando a formatação do botão em formato de bloco*/
+    /* https://www.w3schools.com/css/css_display_visibility.asp */
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem; /*espaçamento entre as letras ao passar o mouse */
+}
+
+.row {
+    display: flex;/*define layout flexivel para os itens*/
+    align-items: center; /*alinha os itens ao centro verticalmente*/
+    background: var(--bg-card);/*Aplica uma cor de fundo aos elementos*/
+    flex-wrap: wrap;/* permite que os itens quebrem para a proxima linha se necessario*/
+    border: var(--border); /*aplica uma borda ao redor da linha*/
+}
+
+.row .image {
+    flex: 1 1 45rem; /* DEFINE O TAMANHO FLEXIVEL DO ELEMENTO: BASE 45REM, PODENDO CRESCER OU ENCOLHER, OU SEJA, FAZ COM QUE POSSA SER ADAPTAVEL PARA TELAS GRANDES OU PEQUENAS*/
+}
+
+.row .image img{
+    width: 100%; /*faz que a imagem ocupe toda a largura do container */
+}
+
+.row .content{
+    flex: 1 1 45rem;/*define o tamanho flexivel do conteudo: base 45rem podera crescer ou dimunuir*/
+    padding: 2rem; /*adiciona espaçamento interno ao redor do conteudo*/
+}
+
+.row .content h3{
+    font-size: 3rem;/*define o tamanho da fonte para subtitulo*/
+    color: #fff; /*cor da letra*/
+}
+
+.row .content p {
+    font-size: 1.6rem; /*define o tamanho da fonte para o paragrafo*/
+    color: #ccc;/*define uma cor cinza claro*/
+    padding: 1rem 0; /*adiciona espaçamento interno vertical ao texto e as laterais zeradas*/
+    line-height: 1.8rem; /*define espaçamento entre linhas*/
+}
