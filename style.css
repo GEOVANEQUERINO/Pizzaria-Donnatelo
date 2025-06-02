@@ -46,6 +46,10 @@ header {
     z-index: 999;
 }
 
+.hamburguer{
+    display: none;
+}
+
 .logo img{
     height: 6.5rem;/*define altura do logo*/
     border-radius: 100%; /*Torna a logo circular*/
@@ -416,4 +420,37 @@ footer .container {
 .social-links a i:hover {
     color: var(--main-color);
     transition: 0.8s;
+}
+
+.footer-bottom{
+    text-align: center; /*centraliza o texto */
+    padding: 1rem 0;/*Adiciona espaçamento interno vertical*/
+    font-size: 1.6rem;/*Define o tamanho da fonte*/
+    border-top: var(--border);/*Adiciona uma borda superior*/
+    margin-top: 2rem; /*Adiciona espaço acima do roda pé*/
+    color: #ccc;/*define a cor do texto como cinza*/
+}
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1.5rem 2 rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+
+    .ul-header {
+        display: none;
+    }
+
 }
