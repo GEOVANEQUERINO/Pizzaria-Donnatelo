@@ -88,6 +88,23 @@ header {
     color: var(--main-color);/*muda a cor do icone ao passar o mouse*/
 }
 
+.botao-whats {
+
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    z-index: 1000;
+}
+
 /*ESTILIZANDO A SEÇÃO*/
 
 #home {

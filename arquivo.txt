@@ -1,0 +1,7 @@
+Aqui abordaremos algumas propriedades do css:
+
+1 => Outline: Ele é uma bordauqe aparece ao redor de um elemento focado(como quando clicamos ou usamos o tab para navegar).
+
+2 => Propriedades position:
+    -static (padrão)
+        Éum valor padrao, ele segue o fluxo normal da pagina. Ele não responde às propriedades top,right, bottom e left.
